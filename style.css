@@ -23,7 +23,7 @@ body {
 }
 
 .logo-box {
-    background: linear-gradient(to right, #4b6cb7, #34a853);
+    background: linear-gradient(to right, #1b3061, #34a853);
     color: white;
     padding: 10px;
     text-align: center;
@@ -51,7 +51,6 @@ body {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 6px;
-    transition: background 0.2s ease;
 }
 
 .menu-item i {
@@ -103,7 +102,7 @@ body {
     margin-bottom: 20px;
 }
 .campaign-card.green {
-    background: linear-gradient(to right, #1db954, #1ed760);
+    background: linear-gradient(to right, #045a22, #1ed760);
     color: white;
 }
 .campaign-card img {
