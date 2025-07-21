@@ -112,3 +112,25 @@ body {
     right: 10px;
     height: 80px;
 }
+.campaign-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.campaign-card.blue {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    color: white;
+}
+.campaign-card.darkgreen {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+}
