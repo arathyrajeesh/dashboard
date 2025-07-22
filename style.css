@@ -167,3 +167,82 @@ body {
     align-items: flex-start;
     gap: 8px;
 }
+.username-badge {
+    background-color: #b722f1;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+}
+
+.revenue-widget {
+    background-color: #dce8ff;
+}
+
+.widget h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-title img {
+    width: 20px;
+    height: 20px;
+}
+
+.status strong {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progress {
+    height: 6px;
+    width: 100%;
+    border-radius: 5px;
+    background: #e0e0e0;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress.red::after {
+    width: 70%;
+    background: red;
+}
+
+.progress.blue::after {
+    width: 60%;
+    background: #00cfe8;
+}
+
+.progress.purple::after {
+    width: 85%;
+    background: #805ad5;
+}
+
+.text-red {
+    color: #f44336;
+}
+
+.text-blue {
+    color: #00cfe8;
+}
+
+.text-purple {
+    color: #805ad5;
+}
+
