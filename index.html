@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Top Bar UI</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <section class="sidebar">
-            <div class="logo-box">
+    <div class="container"> <section class="sidebar"> <div class="logo-box">
                 <span>Logo</span>
             </div>
             <nav class="menu">
-                <a class="menu-item active" href="#"><i class="fas fa-calendar-alt"></i> Calendar</a>
-                <a class="menu-item" href="#"><i class="fas fa-user-circle"></i> My Profile</a>
-                <a class="menu-item" href="#"><i class="fas fa-briefcase"></i> Booking</a>
-                <a class="menu-item" href="#"><i class="fas fa-comments"></i> Chat</a>
-                <a class="menu-item" href="#"><i class="fas fa-life-ring"></i> Support</a>
+                <a class="menu-item active" href="#">Calendar</a>
+                <a class="menu-item" href="#">My Profile</a>
+                <a class="menu-item" href="#">Booking</a>
+                <a class="menu-item" href="#">Chat</a>
+                <a class="menu-item" href="#">Support</a>
             </nav>
         </section>
-        <div class="main-content">
-            <section class="top-bar">
-                <div class="greeting">Hi Alaxander</div>
+
+        <div class="main-content"> <section class="top-bar">
+                <div class="greeting">Hi Alexander</div>
                 <div class="top-icons">
                     <img class="avatar" src="assets/Notifications.png" alt="Notifications" />
                     <img class="avatar" src="assets/chat.png" alt="Chat" />
@@ -30,6 +28,7 @@
                     <img class="avatar" src="assets/avatar.jpg" alt="Avatar" />
                 </div>
             </section>
+
             <section class="card-section">
                 <div class="campaign-cards">
                     <div class="campaign-card green">
@@ -50,7 +49,6 @@
                         </div>
                         <img src="assets/dog.png" alt="Dog" />
                     </div>
-
                     <div class="campaign-card darkgreen">
                         <h4> Other Pets Details</h4>
                         <p>Search anything you want</p>
@@ -58,10 +56,8 @@
                             <div>Pet Count: <strong>100</strong></div>
                             <div>Revenue Generated: <strong>AED 2354</strong></div>
                         </div>
-                        <img src="" alt="Other Pets" />
-                    </div>
+                        <img src="assets/other_pets.png" alt="Other Pets" /> </div>
                 </div>
-
 
                 <div class="info-widgets">
                     <div class="widget booking-widget">
@@ -119,7 +115,162 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
+
+            <div class="calendar-and-sidebar-wrapper">
+                <section class="calendar-display"> <div class="calendar-header">
+                        <div class="calendar-nav">
+                            <button class="nav-button">&lt;</button>
+                            <button class="nav-button">&gt;</button>
+                            <button class="today-button">Today</button>
+                        </div>
+                        <div class="calendar-view-toggle">
+                            <button class="view-button active">Month</button>
+                            <button class="view-button">Week</button>
+                            <button class="view-button">Day</button>
+                            <button class="view-button">List</button>
+                            <i class="fas fa-ellipsis-h view-options-icon"></i>
+                        </div>
+                    </div>
+                    <div class="calendar-grid-container">
+                        <div class="calendar-weekdays">
+                            <span>Sun</span>
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="calendar-cell past-month">26</div>
+                            <div class="calendar-cell past-month">27</div>
+                            <div class="calendar-cell past-month">28</div>
+                            <div class="calendar-cell past-month">29</div>
+                            <div class="calendar-cell past-month">30</div>
+                            <div class="calendar-cell past-month">31</div>
+                            <div class="calendar-cell">1</div>
+                            <div class="calendar-cell">2</div>
+                            <div class="calendar-cell current-day">
+                                3
+                                <div class="event pink"></div>
+                            </div>
+                            <div class="calendar-cell active-day">
+                                4
+                                <div class="event light-blue"></div>
+                                <div class="event orange"></div>
+                                <div class="event green"></div>
+                            </div>
+                            <div class="calendar-cell">5</div>
+                            <div class="calendar-cell">6</div>
+                            <div class="calendar-cell">7</div>
+                            <div class="calendar-cell">8</div>
+                            <div class="calendar-cell">9</div>
+                            <div class="calendar-cell">10</div>
+                            <div class="calendar-cell">11</div>
+                            <div class="calendar-cell">12</div>
+                            <div class="calendar-cell">13</div>
+                            <div class="calendar-cell">14</div>
+                            <div class="calendar-cell">15</div>
+                            <div class="calendar-cell">16</div>
+                            <div class="calendar-cell">17</div>
+                            <div class="calendar-cell">18</div>
+                            <div class="calendar-cell">19</div>
+                            <div class="calendar-cell">20</div>
+                            <div class="calendar-cell">21</div>
+                            <div class="calendar-cell">22</div>
+                            <div class="calendar-cell">23</div>
+                            <div class="calendar-cell">24</div>
+                            <div class="calendar-cell">25</div>
+                            <div class="calendar-cell">26</div>
+                            <div class="calendar-cell">27</div>
+                            <div class="calendar-cell">28</div>
+                            <div class="calendar-cell">29</div>
+                            <div class="calendar-cell">30</div>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="calendar-sidebar"> <section class="legend-section">
+                        <div class="legend-item">
+                            <input type="checkbox" id="all" checked>
+                            <label for="all">All</label>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="dogBoarding" checked>
+                            <label for="dogBoarding">Dog Boarding</label>
+                            <span class="legend-color pink-legend"></span>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="dogWalking" checked>
+                            <label for="dogWalking">Dog Walking</label>
+                            <span class="legend-color light-blue-legend"></span>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="dogDayCare" checked>
+                            <label for="dogDayCare">Dog Day Care</label>
+                            <span class="legend-color orange-legend"></span>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="catBoarding" checked>
+                            <label for="catBoarding">Cat Boarding</label>
+                            <span class="legend-color green-legend"></span>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="catSitting" checked>
+                            <label for="catSitting">Cat Sitting</label>
+                            <span class="legend-color purple-legend"></span>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="dropInVisitCat" checked>
+                            <label for="dropInVisitCat">Drop In Visit - Cat</label>
+                            <span class="legend-color dark-blue-legend"></span>
+                        </div>
+                    </section>
+
+                    <section class="request-payout-section">
+                        <div class="section-header">
+                            <h2>Request Payout</h2>
+                            <i class="fas fa-ellipsis-v options-icon"></i>
+                        </div>
+                        <div class="payout-list">
+                            <div class="payout-item">
+                                <img src="assets/martin.png" alt="Mr Martin Luther" class="profile-pic">
+                                <div class="details">
+                                    <div class="name">Mr Martin Luther</div>
+                                    <div class="service">Dog Walking</div>
+                                    <div class="date">29-03-2023</div>
+                                </div>
+                                <div class="price">$1200</div>
+                                <button class="payout-button">Payout</button>
+                            </div>
+                            <div class="payout-item">
+                                <img src="assets/sara.jpg" alt="Ms Sara" class="profile-pic">
+                                <div class="details">
+                                    <div class="name">Ms Sara</div>
+                                    <div class="service">Dog Walking</div>
+                                    <div class="date">29-03-2023</div>
+                                </div>
+                                <div class="price">$120</div>
+                                <button class="payout-button">Payout</button>
+                            </div>
+                            <div class="payout-item">
+                                <img src="assets/donald.jpg" alt="Mr Donald Modi" class="profile-pic">
+                                <div class="details">
+                                    <div class="name">Mr Donald Modi</div>
+                                    <div class="service">Dog Walking</div>
+                                    <div class="date">29-03-2023</div>
+                                </div>
+                                <div class="price">$800</div>
+                                <button class="payout-button">Payout</button>
+                            </div>
+                        </div>
+                        <button class="view-more-button">View More</button>
+                    </section>
+                </aside>
+            </div>
         </div>
+    </div>
 </body>
 </html>
