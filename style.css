@@ -6,22 +6,19 @@
 }
 
 body {
-    background-color: #f4f7f6; 
-    display: flex; 
-    min-height: 100vh;
+    background-color: #f4f7f6;
     color: #333;
     font-size: 14px;
+    margin: 0; 
 }
-
 .container {
     display: flex;
-    width: 100%; 
-    max-width: 1400px; 
-    margin: 20px auto; 
-    background-color: #ffffff; 
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .sidebar {
@@ -31,9 +28,7 @@ body {
     padding: 20px 10px;
     display: flex;
     flex-direction: column; 
-    flex-shrink: 0; 
-    height: auto; 
-    padding-bottom: 40px; 
+    /* height: auto;  */
 }
 
 .logo-box {
@@ -109,9 +104,9 @@ body {
 }
 
 .avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+    width: 35px;
+    height: 40px;
+    border-radius: 100%;
     object-fit: cover;
 }
 
@@ -184,7 +179,42 @@ body {
 .campaign-card.darkgreen {
     background: linear-gradient(to right, #11998e, #38ef7d);
 }
-
+.campaign-card.darkgreen h4::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("assets/campagin-card.png");
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.campaign-card.blue h4::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("assets/campagin-card.png");
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.campaign-card.green h4::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("assets/campaginc-ard.png");
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 .info-widgets {
     display: flex;
     gap: 20px;
@@ -659,3 +689,14 @@ body {
     background-color: #43a047;
 }
 
+.main-footer {
+    background-color: #007bff;
+    height: 20px; 
+    width: 100%; 
+    margin-top: 40px; 
+}
+
+.main-footer .footer-content {
+    max-width: 1200px;
+    padding: 0 20px;
+}
