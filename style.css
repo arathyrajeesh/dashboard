@@ -173,7 +173,6 @@ body {
     object-fit: contain;
 }
 
-/* Campaign Card specific colors */
 .campaign-card.green {
     background: linear-gradient(to right, #045a22, #1ed760);
 }
