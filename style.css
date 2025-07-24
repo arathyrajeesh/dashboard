@@ -318,19 +318,6 @@ body {
     width: 85%;
     background: #9c27b0; 
 }
-
-.text-red {
-    color: #f44336;
-}
-
-.text-blue {
-    color: #2196f3;
-}
-
-.text-purple {
-    color: #9c27b0;
-}
-
 .calendar-and-sidebar-wrapper {
     display: flex;
     width: 100%;
