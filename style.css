@@ -106,7 +106,7 @@ body {
 .avatar {
     width: 35px;
     height: 40px;
-    border-radius: 100%;
+    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -279,7 +279,15 @@ body {
     height: 20px;
     object-fit: contain;
 }
-
+.icon-title-red{
+    background-color:pink;
+}
+.icon-title-blue{
+    background-color:rgb(156, 156, 231);
+}
+.icon-title-light-blue{
+    background-color:rgb(190, 190, 236);
+}
 .status strong {
     font-size: 18px;
     font-weight: 600;
@@ -318,6 +326,7 @@ body {
     width: 85%;
     background: #9c27b0; 
 }
+
 .calendar-and-sidebar-wrapper {
     display: flex;
     width: 100%;
@@ -521,7 +530,7 @@ body {
     font-weight: 500;
 }
 
-.legend-item {
+.checkbox-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -529,19 +538,19 @@ body {
     color: #555;
 }
 
-.legend-item input[type="checkbox"] {
+.checkbox-item input[type="checkbox"] {
     margin-right: 10px;
     accent-color: #4CAF50;
     width: 16px; 
     height: 16px;
 }
 
-.legend-item label {
+.checkbox-item label {
     flex-grow: 1;
     cursor: pointer;
 }
 
-.legend-color {
+.checkbox {
     width: 15px;
     height: 15px;
     border-radius: 3px;
@@ -549,22 +558,22 @@ body {
     flex-shrink: 0; 
 }
 
-.pink-legend { 
+.pink { 
     background-color: #f8bbd0; 
 }
-.light-blue-legend { 
+.light-blue { 
     background-color: #b3e5fc;
 }
-.orange-legend { 
+.orange { 
     background-color: #ffe0b2; 
 }
-.green-legend { 
+.green{ 
     background-color: #c8e6c9; 
 }
-.purple-legend { 
+.purple { 
     background-color: #e1bee7; 
 }
-.dark-blue-legend { 
+.dark-blue { 
     background-color: #bbdefb; 
 }
 
@@ -686,4 +695,13 @@ body {
 .main-footer .footer-content {
     max-width: 1200px;
     padding: 0 20px;
+}
+.item .icon-color-red{
+    color: red;
+}
+.item .icon-color-blue{
+    color:rgba(58, 234, 255, 1);
+}
+.item .icon-color-red{
+    color: rgba(117, 99, 255, 1);
 }
